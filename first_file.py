@@ -8,7 +8,7 @@ def feelings_check():
 	feeling = input()
 	checking_feelings = True
 	while checking_feelings:
-		feelings.append[feeling]
+		feelings.append(feeling)
 		print("""
 			Ok, you're feeling """ + feeling + ". Anything else? (y/n)")
 		yes_or_no = input()
@@ -17,8 +17,9 @@ def feelings_check():
 			feeling = input()
 		else:
 			checking_feelings = False
-	print("""Great. This is everything that you're feeling right now:
-		Let's continue.""")
-
+	print("Great. This is everything that you're feeling right now:\n")
+	for feeling_x in feelings:
+		print(feeling_x)
+	print("\nLet's continue.")
 
 feelings_check()
