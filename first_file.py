@@ -1,56 +1,48 @@
-feelings = ['angry', 'sad', 'happy', 'content']
-
 def feelings_check():
 	
 	feelings =[]
 
 	print("What are you feeling right now? ('n' for nothing or you don't want to share)")
 	
-	first_feeling = input()
+	# checking_feelings = True
+	feeling = input()
 
-	if first_feeling != 'n':
-		feelings.append(first_feeling)
-		print("Ok, you're feeling " + first_feeling + ". And what else? ('n' for nothing or you don't want to share)")
-		checking_feelings = True
-		feeling = input()
-
-		if feeling != 'n':
-			checking_feelings = True
-			while checking_feelings:
-				feeling = input()
-				feelings.append(feeling)
-				print("Ok, you're feeling " + feeling + ". And what else? ('n' for nothing)")
-				more_feelings = input()
-				if more_feelings == 'n':
-					checking_feelings = False
-				else:
-					feeling = input()
-
-	print("Great. This is everything that you're feeling right now:\n")
-	for feeling in feelings:
-		print("• " + feeling)
-	print("\nLet's continue."))
-
-
+	if feeling == 'n':
+		print("No worries. I hope you figure out what you need to. I'll be here if you need me.")
 
 	else:
+		# while checking_feelings:
 		feelings.append(feeling)
-		print("Great. You've said you're feeling " + first_feeling + ".")
 
-	checking_feelings = True
-	while checking_feelings:
-		feeling = input()
-		feelings.append(feeling)
-		print("Ok, you're feeling " + feeling + ". And what else? ('n' for nothing)")
-		more_feelings = input()
-		if more_feelings == 'n':
-			checking_feelings = False
+		print("Great. You've said you're feeling " + feeling + ". And what else? ('n' for nothing)")
+
+		checking_feelings = True
+		while checking_feelings:
+			additional_feeling = input()
+
+		if additional_feeling == 'n':
+			print("Great. So you're just feeling " + feeling + " or there's nothing more you want to share right now. I'll be here if you need me again.")
+
 		else:
-			feeling = input()
+			print("Ok, so you're also feeling " + additional_feeling + ". And what else? ('n' for nothing)")
 
-	print("Great. This is everything that you're feeling right now:\n")
-	for feeling in feelings:
-		print("• " + feeling)
-	print("\nLet's continue.")
+		feeling = input()
+
+		if feeling 
+
+		checking_feelings = True
+		while checking_feelings:
+			feeling = input()
+			feelings.append(feeling)
+		# 	print("Ok, you're feeling " + feeling + ". And what else? ('n' for nothing)")
+		# 	more_feelings = input()
+		# 	if more_feelings == 'n':
+		# 		checking_feelings = False
+		# 	else:
+		# 		feeling = input()
+	
+		# for feeling in feelings:
+		# 	print("• " + feeling)
+		# print("\nLet's continue."))
 
 feelings_check()
