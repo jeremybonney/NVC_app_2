@@ -25,6 +25,7 @@ def feelings_check():
 				checking_feelings = False
 
 			else:
+				feelings.append(additional_feeling)
 				print("Ok, so you're also feeling " + additional_feeling + ". And what else? ('n' for nothing)")
 
 feelings_check()
