@@ -19,9 +19,9 @@ def feelings_check():
 			additional_feeling = input()
 
 			if additional_feeling == 'n':
-				print("Great. So this is everything you're feeling right now: "
-					for feeling in feelings:
-						print("• " + feeling)
+				print("Great. So this is everything you're feeling right now: ")
+				for feeling in feelings:
+					print("• " + feeling)
 				checking_feelings = False
 
 			else:
